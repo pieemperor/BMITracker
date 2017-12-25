@@ -1,0 +1,10 @@
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\bin\Debug\netcoreapp1.1\BMITrackerApp.deps.json
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\bin\Debug\netcoreapp1.1\BMITrackerApp.runtimeconfig.json
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\bin\Debug\netcoreapp1.1\BMITrackerApp.runtimeconfig.dev.json
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\bin\Debug\netcoreapp1.1\BMITrackerApp.dll
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\bin\Debug\netcoreapp1.1\BMITrackerApp.pdb
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\obj\Debug\netcoreapp1.1\BMITrackerApp.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\obj\Debug\netcoreapp1.1\BMITrackerApp.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\obj\Debug\netcoreapp1.1\BMITrackerApp.AssemblyInfo.cs
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\obj\Debug\netcoreapp1.1\BMITrackerApp.dll
+C:\Users\student\Desktop\BMITrackerApp\BMITrackerApp\obj\Debug\netcoreapp1.1\BMITrackerApp.pdb

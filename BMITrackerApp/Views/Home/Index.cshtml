@@ -1,0 +1,80 @@
+@model IEnumerable<BMITrackerApp.Models.Entities.HealthProfile>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>All Health Profiles</h2>
+
+@{ 
+    if(Model.Count() == 1)
+    {
+       <h3> There is @Model.Count() client profile</h3>
+    } else
+    {
+       <h3> There are @Model.Count() client profiles</h3>
+    }
+}
+
+<p>
+    <a asp-action="Create" asp-controller="Profile">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Body State
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+                @{ 
+                    if(item.Gender == 0)
+                    {
+                        <td>Female</td>
+}
+                    else if (item.Gender == 1)
+                    {
+                        <td>Male</td>
+}
+                    else
+                    {
+                        <td>Other</td>
+                    }
+                }
+            <td>
+                @item.GetAge()
+            </td>
+            <td>
+                @item.GetBodyState()
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Profile", new { id=item.Id }) |
+                @Html.ActionLink("Details", "Details", "Profile", new {  id=item.Id  }) |
+                @Html.ActionLink("Delete", "Delete", "Profile", new {  id=item.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
